@@ -1,0 +1,38 @@
+2:1 Multiplexer
+
+Description
+
+A 2:1 Multiplexer (MUX) is a digital circuit that selects one of two input signals and sends the selected input to the output based on the select line.
+
+Inputs
+
+- I0 – Input 0
+- I1 – Input 1
+- S – Select line
+
+Output
+
+- Y – Selected output
+
+Boolean Expression
+
+Y = (~S & I0) | (S & I1)
+
+Working
+
+- When S = 0, the output Y follows I0.
+- When S = 1, the output Y follows I1.
+
+Truth Table
+
+S| Y
+0| I0
+1| I1
+
+Language
+
+Verilog HDL
+
+Author
+
+Jothisha K S
